@@ -1,0 +1,52 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.tile {
+    background-color: #e31d1a;
+    color: #ffffff;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 20px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.half {
+    display: inline-block;
+    width: 49%;
+    box-sizing: border-box;
+}
+
+.tile:hover {
+    background-color: #940000;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+
+.tile a:hover, .tile a:link, .tile a:visited, .tile a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.tile .title {
+    font-weight: bold;
+}

@@ -1,0 +1,16 @@
+﻿@model IEnumerable<PartialViewWithLayerNet6.ViewModels.AdultVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>List @ViewBag.Type</h1>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+
+        @await Html.PartialAsync("DisplayTemplates/_TileView", item)
+
+    }
+</div>
